@@ -1,0 +1,45 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: League Spartan,Arial, sans-serif; /* Font-family from screenshot */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0 ,0 ,0 ,0.5),rgb(0,0,0,0.5)),url('/Public/websiteimages/frontpage.png');
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 200px; /* Large font size for heading */
+    font-weight:bolder;
+    color: #fcfcfc; /* Black text */
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 30px; /* Spacing inside button */
+    font-size: 40px; /* Button text size */
+    font-weight: bold;
+    color: #000000; /* Black text */
+    background-color: #f9c56a; /* Button background color */
+    border-radius: 25px; /* Rounded corners for button */
+    text-decoration: none; /* No underline */
+    transition: transform 0.2s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.1); /* Button zoom effect on hover */
+  }
+  .button:active{
+    color:white;
+  }

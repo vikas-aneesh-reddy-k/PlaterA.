@@ -1,0 +1,130 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: League Spartan, Arial, sans-serif;
+    background-image: url('/Public/websiteimages/bookpage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensures body is at least as tall as the viewport */
+    overflow-x: hidden; /* Prevents horizontal scrolling caused by the background */
+}
+
+
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ffffff, #9b9b9b, #f2f2f2);
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    height: 60px;
+}
+
+header .menu-icon {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 80px !important;
+    font-weight: bolder;
+    color: black;
+    line-height: 1.2;
+}
+
+
+.header-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    font-weight: normal;
+}
+
+/* Instructions Box */
+.instructions {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    text-align:justify;
+    margin: 10px auto;
+    max-width: 90%;
+    border-radius: 51px;
+}
+
+.instructions p {
+    margin: 5px 0;
+}
+
+/* Main Content */
+.main-content {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Dropdown Menus */
+.dropdown {
+    display: inline-block;
+    margin: 50px;
+}
+
+.dropdown select {
+    padding: 10px;
+    font-size: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    cursor:grab;
+    text-align: center;
+    font-family: League Spartan,Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.dropdown select option {
+    color: black;
+    background: white;
+    font-family: League Spartan,Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.dropdown select:focus {
+    outline: none;
+}
+.footer {
+    text-align: center; /* Center-align the text */
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    padding: 10px 20px; /* Add spacing around the text */
+    font-size: 14px; /* Slightly smaller font size */
+    position: fixed; /* Fix it to the bottom of the viewport */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Ensure it spans the full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    z-index: 100; /* Ensure it stays above other elements */
+}
